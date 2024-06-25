@@ -1,0 +1,195 @@
+@charset "UTF-8";
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+label {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+span {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+table {
+  border-spacing: 0px;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+button {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-family: inherit;
+  line-height: 0;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat";
+  line-height: 1;
+  background-image: url(../image/фон.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1920px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.row {
+  display: flex;
+}
+
+.header {
+  flex: 0 0 auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+}
+.header__row {
+  flex-direction: column;
+}
+.header__container {
+  padding: 0;
+}
+.header__top {
+  width: 100%;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.header__logo img {
+  max-width: 56.75px;
+}
+.header__logo-name {
+  font-size: 36px;
+}
+.header__contact {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.header__mail {
+  color: #fff;
+  font-size: 24px;
+}
+.header__vk {
+  color: #fff;
+  font-size: 24px;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  border-bottom: 1px solid white;
+  align-items: center;
+  width: 100%;
+}
+
+.federation {
+  padding-top: 165px;
+  border-bottom: 1px solid white;
+  box-sizing: border-box;
+}
+.federation__row {
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: calc(100vh - 165px);
+}
+.federation__title {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.main {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
