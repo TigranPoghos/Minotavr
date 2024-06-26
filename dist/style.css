@@ -68,7 +68,7 @@ button {
   cursor: pointer;
   background-color: transparent;
   font-family: inherit;
-  line-height: 0;
+  line-height: 1;
 }
 
 .title {
@@ -84,7 +84,7 @@ button {
 }
 
 .text {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   color: #fff;
 }
@@ -170,18 +170,28 @@ body {
 
 .federation {
   padding-top: 165px;
-  border-bottom: 1px solid white;
   box-sizing: border-box;
+  position: relative;
 }
 .federation__row {
-  align-items: center;
-  justify-content: center;
   box-sizing: border-box;
   height: calc(100vh - 165px);
+  display: flex;
+  flex-direction: column;
 }
 .federation__title {
   text-align: center;
   line-height: 1.5;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.federation__image {
+  position: absolute;
+  max-width: 500px;
+  height: auto;
+  z-index: -1;
+  right: 150px;
+  top: 28%;
 }
 
 .footer {
