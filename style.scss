@@ -76,6 +76,12 @@ button {
     color: #fff;
 }
 
+.title-2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+
 .subtitle {
     font-size: 24px;
     font-weight: 500;
@@ -95,12 +101,12 @@ body {
     font-family: 'Montserrat';
     line-height: 1;
     background-image: url(../image/фон.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
 }
 
 .container {
-    max-width: 1920px;
+    max-width: 1440px;
     width: 100%;
     box-sizing: border-box;
     margin: 0 auto;
@@ -116,7 +122,9 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100vw;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
 
     &__row {
         flex-direction: column;
@@ -133,7 +141,6 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        border-bottom: 1px solid white;
     }
 
     &__logo {
@@ -171,9 +178,17 @@ body {
         justify-content: space-between;
         padding: 20px 50px;
         box-sizing: border-box;
-        border-bottom: 1px solid white;
         align-items: center;
         width: 100%;
+    }
+
+    &__line {
+        width: 100vw;
+        margin-left: -50vw;
+        left: 50%;
+        height: 1px;
+        background-color: white;
+        position: relative;
     }
 }
 
@@ -182,6 +197,7 @@ body {
     border-bottom: 1px solid white;
     box-sizing: border-box;
     position: relative;
+    height: 100vh;
 
     &__row {
         box-sizing: border-box;
@@ -205,10 +221,65 @@ body {
         right: 150px;
         top: 28%;
     }
+
+    &__button {
+        padding: 20px 40px;
+        box-sizing: border-box;
+        border: 2px solid white;
+        margin-bottom: 100px;
+        margin-left: 50px;
+        max-width: max-content;
+    }
+}
+
+.about {
+    &__row {
+        flex-direction: column;
+        margin: 100px 0;
+    }
+
+    &__title {
+        margin: 0 auto;
+    }
+
+    &__club {
+        margin-top: 100px;
+    }
+
+    &__trainer {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+
+        &-circle {
+            border-radius: 100%;
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        &-image {
+            max-width: 300px;
+            position: absolute;
+            height: auto;
+            bottom: -3px;
+            left: 46px;
+        }
+
+        &-name {
+            text-align: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    }
 }
 
 .footer {
     flex: 0 0 auto;
+    overflow: hidden;
+    width: 100%;
 }
 
 .main {
